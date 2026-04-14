@@ -61,7 +61,7 @@ const App = () => {
     {
       degree: "Secondary Education (10th Grade)",
       institution: "Rehdon Secondary School",
-      period: "20111-2019",
+      period: "2011-2019",
       description: "GPA: 3.35/4.0."
     }
   ];
