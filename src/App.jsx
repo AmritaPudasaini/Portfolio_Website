@@ -1,6 +1,6 @@
 import React from 'react';
 import { Github, Linkedin, Mail, ExternalLink, Code, GraduationCap, Briefcase, Terminal } from 'lucide-react';
-import profileImg from './assets/profile.jpg';
+import profileImg from './assets/image.jpg';
 import receptionRobotImg from './assets/receptionrobot.jpg';
 import roboSoccerImg from './assets/robosoccer.jpg';
 import Python from './assets/python.jpg';
@@ -50,7 +50,7 @@ const App = () => {
       degree: "Bachelor of Science in Information Technology",
       institution: "Presidential Graduate School (Affiliated with Westcliff University)",
       period: "2022-2026",
-      description: "Specialized in Artificial Intelligence and Machine Learning. GPA: 3.8/4.0"
+      description: "Specialized in Artificial Intelligence and Machine Learning. GPA: 3.96/4.0"
     },
     {
       degree: "High School (+2)",
