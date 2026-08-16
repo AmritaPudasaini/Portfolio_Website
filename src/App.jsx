@@ -352,7 +352,7 @@ const App = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="text-2xl font-bold mb-4">Amrita Pudasaini</div>
-            <p className="text-gray-400 mb-6">AI/ML & Robotics Enthusiast</p>
+            <p className="bg-gray-900">AI/ML & Robotics Enthusiast</p>
             <div className="flex justify-center space-x-6 mb-8">
               <a href="https://github.com/AmritaPudasaini" className="text-gray-400 hover:text-white transition-colors">
                 <Github size={24} />
