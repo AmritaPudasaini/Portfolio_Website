@@ -205,7 +205,7 @@ const App = () => {
                 I am always eager to learn, experiment, and collaborate on projects that push the boundaries of technology. My goal is to leverage my skills to contribute to the tech community and create solutions that have a meaningful impact.
               </p>
               <div className="flex flex-wrap gap-2">
-                {['Python', 'Microcontrollers', 'Docker', 'Apache Airflow', 'Drone Piloting', 'React', 'Networking', 'SQL', 'HTML', 'CSS', 'GitHub', 'Packet Tracer', 'DBMS'].map((tech) => (
+                {['Python', 'Machine Learning', 'Deep Learning', 'Neural Networks', 'Microcontrollers', 'Docker', 'Apache Airflow', 'Drone Piloting', 'React', 'Networking', 'SQL', 'HTML', 'CSS', 'GitHub', 'Robotics', 'DBMS'].map((tech) => (
                   <span 
                     key={tech} 
                     className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
