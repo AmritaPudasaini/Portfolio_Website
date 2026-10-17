@@ -8,6 +8,7 @@ import Django from './assets/django.jpg';
 import electricityImg from './assets/electricityusage.jpg';
 import pgsSearchImg from './assets/PGS-SearchEngine.jpg';
 import pneumoniaImg from './assets/pneumoniadetection.jpg';
+import taskmanagement from './assets/taskmanagement.jpg';
 
 const App = () => {
   const projects = [
@@ -15,7 +16,7 @@ const App = () => {
       title: "IoT Reception Robot",
       description: "An autonomous robot designed to navigate office environments, greet visitors, and provide information of colleges.",
       technologies: ["Python", "ESP8266", "Motor Driver", "Raspberry Pi"],
-      link: "",
+      link: "https://docs.google.com/document/d/1NYFNa5UDosaGfpm9oM_wTDGs-bvf2d4W8ohXRkB2-Bo/edit?usp=sharing",
       image: receptionRobotImg
     },
     {
@@ -23,28 +24,28 @@ const App = () => {
       description: "Deep learning project that classifies chest X-rays as Normal or Pneumonia. Compared a CNN built from scratch, DenseNet121 transfer learning, and a Random Forest on DenseNet121 features using accuracy, precision, recall, F1-score and ROC-AUC on a balanced 9,600-image dataset. The CNN is deployed as a local REST API with FastAPI that returns a prediction with a confidence score.",
       technologies: ["Python", "CNN", "DenseNet121", "Random Forest", "FastAPI"],
       link: "https://github.com/AmritaPudasaini/Pneumonia-Detection-from-Chest-X-ray",
-      image: pneumoniaImg // TODO: replace with a screenshot, e.g. ./assets/pneumonia.jpg
+      image: pneumoniaImg
     },
     {
       title: "Predicting Daily Electricity Usage in Data Centers",
       description: "Regression project predicting daily electricity usage (MWh) of global data centers from a 126,770-record dataset (2019-2025). Compared Linear, Ridge and Random Forest models with GridSearchCV and 5-fold cross-validation. Random Forest reached an R² of 0.994 versus 0.615 for Linear Regression, and facility capacity was the strongest predictor.",
       technologies: ["Python", "Scikit-learn", "Random Forest", "Pandas", "Seaborn"],
       link: "https://github.com/AmritaPudasaini/Predicting-Daily-Electricity-Usage-in-Data-Center-Using-LinearRegression-and-RandomForestRegressor",
-      image: electricityImg // TODO: replace with a chart screenshot, e.g. ./assets/datacenter.jpg
+      image: electricityImg
     },
     {
       title: "PGS Search Engine (ETL Pipeline)",
       description: "Contributed to the Presidential Graduate School search engine by setting up Apache Airflow for its ETL pipeline, running in Docker containers to schedule and manage data workflows.",
       technologies: ["Python", "Docker", "Apache Airflow", "ETL"],
       link: "https://github.com/AmritaPudasaini/pgs-search-engine/tree/amrita-apache-airflow/ETL/airflow",
-      image: PGSSearchImg // TODO: replace with a screenshot, e.g. ./assets/pgssearch.jpg
+      image: PGSSearchImg
     },
     {
       title: "Task Management App",
       description: "The Task Management Application is a Python-based command-line tool that allows users to manage their tasks. It provides basic functionality for adding, listing, and removing tasks, along with tracking their completion status. Tasks are stored in a JSON file (tasks.json), making it easy to load and save data between sessions. This simple tool aims to help users stay organized by managing tasks efficiently.",
       technologies: ["Python", "Pytest"],
       link: "https://github.com/AmritaPudasaini/CS50-Python/tree/main/124330256/project",
-      image: Python
+      image: taskmanagement
     },
     {
       title: "Robo Soccer",
