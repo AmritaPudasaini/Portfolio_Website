@@ -16,7 +16,6 @@ const App = () => {
       title: "IoT Reception Robot",
       description: "An autonomous robot designed to navigate office environments, greet visitors, and provide information of colleges.",
       technologies: ["Python", "ESP8266", "Motor Driver", "Raspberry Pi"],
-      link: "https://docs.google.com/document/d/1NYFNa5UDosaGfpm9oM_wTDGs-bvf2d4W8ohXRkB2-Bo/edit?usp=sharing",
       image: receptionRobotImg
     },
     {
@@ -38,7 +37,7 @@ const App = () => {
       description: "Contributed to the Presidential Graduate School search engine by setting up Apache Airflow for its ETL pipeline, running in Docker containers to schedule and manage data workflows.",
       technologies: ["Python", "Docker", "Apache Airflow", "ETL"],
       link: "https://github.com/AmritaPudasaini/pgs-search-engine/tree/amrita-apache-airflow/ETL/airflow",
-      image: PGSSearchImg
+      image: pgsSearchImg
     },
     {
       title: "Task Management App",
