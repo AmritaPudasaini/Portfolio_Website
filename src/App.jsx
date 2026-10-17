@@ -20,21 +20,21 @@ const App = () => {
       description: "Deep learning project that classifies chest X-rays as Normal or Pneumonia. Compared a CNN built from scratch, DenseNet121 transfer learning, and a Random Forest on DenseNet121 features using accuracy, precision, recall, F1-score and ROC-AUC on a balanced 9,600-image dataset. The CNN is deployed as a local REST API with FastAPI that returns a prediction with a confidence score.",
       technologies: ["Python", "CNN", "DenseNet121", "Random Forest", "FastAPI"],
       link: "https://github.com/AmritaPudasaini/Pneumonia-Detection-from-Chest-X-ray",
-      image: pneumoniadetectionImg // TODO: replace with a screenshot, e.g. ./assets/pneumonia.jpg
+      image: /assets/pneumoniadetectionImg // TODO: replace with a screenshot, e.g. ./assets/pneumonia.jpg
     },
     {
       title: "Predicting Daily Electricity Usage in Data Centers",
       description: "Regression project predicting daily electricity usage (MWh) of global data centers from a 126,770-record dataset (2019-2025). Compared Linear, Ridge and Random Forest models with GridSearchCV and 5-fold cross-validation. Random Forest reached an R² of 0.994 versus 0.615 for Linear Regression, and facility capacity was the strongest predictor.",
       technologies: ["Python", "Scikit-learn", "Random Forest", "Pandas", "Seaborn"],
       link: "https://github.com/AmritaPudasaini/Predicting-Daily-Electricity-Usage-in-Data-Center-Using-LinearRegression-and-RandomForestRegressor",
-      image: Python // TODO: replace with a chart screenshot, e.g. ./assets/datacenter.jpg
+      image: /assets/electricityusageImg // TODO: replace with a chart screenshot, e.g. ./assets/datacenter.jpg
     },
     {
       title: "PGS Search Engine (ETL Pipeline)",
       description: "Contributed to the Presidential Graduate School search engine by setting up Apache Airflow for its ETL pipeline, running in Docker containers to schedule and manage data workflows.",
       technologies: ["Python", "Docker", "Apache Airflow", "ETL"],
       link: "https://github.com/AmritaPudasaini/pgs-search-engine/tree/amrita-apache-airflow/ETL/airflow",
-      image: PGS-SearchEngineImg // TODO: replace with a screenshot, e.g. ./assets/pgssearch.jpg
+      image: /assets/PGS-SearchEngineImg // TODO: replace with a screenshot, e.g. ./assets/pgssearch.jpg
     },
     {
       title: "Task Management App",
