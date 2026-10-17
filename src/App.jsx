@@ -16,6 +16,27 @@ const App = () => {
       image: receptionRobotImg
     },
     {
+      title: "Pneumonia Detection from Chest X-Rays",
+      description: "Deep learning project that classifies chest X-rays as Normal or Pneumonia. Compared a CNN built from scratch, DenseNet121 transfer learning, and a Random Forest on DenseNet121 features using accuracy, precision, recall, F1-score and ROC-AUC on a balanced 9,600-image dataset. The CNN is deployed as a local REST API with FastAPI that returns a prediction with a confidence score.",
+      technologies: ["Python", "CNN", "DenseNet121", "Random Forest", "FastAPI"],
+      link: "https://github.com/AmritaPudasaini/Pneumonia-Detection-from-Chest-X-ray",
+      image: Python // TODO: replace with a screenshot, e.g. ./assets/pneumonia.jpg
+    },
+    {
+      title: "Predicting Daily Electricity Usage in Data Centers",
+      description: "Regression project predicting daily electricity usage (MWh) of global data centers from a 126,770-record dataset (2019-2025). Compared Linear, Ridge and Random Forest models with GridSearchCV and 5-fold cross-validation. Random Forest reached an R² of 0.994 versus 0.615 for Linear Regression, and facility capacity was the strongest predictor.",
+      technologies: ["Python", "Scikit-learn", "Random Forest", "Pandas", "Seaborn"],
+      link: "https://github.com/AmritaPudasaini/Predicting-Daily-Electricity-Usage-in-Data-Center-Using-LinearRegression-and-RandomForestRegressor",
+      image: Python // TODO: replace with a chart screenshot, e.g. ./assets/datacenter.jpg
+    },
+    {
+      title: "PGS Search Engine (ETL Pipeline)",
+      description: "Contributed to the Presidential Graduate School search engine by setting up Apache Airflow for its ETL pipeline, running in Docker containers to schedule and manage data workflows.",
+      technologies: ["Python", "Docker", "Apache Airflow", "ETL"],
+      link: "https://github.com/AmritaPudasaini/pgs-search-engine/tree/amrita-apache-airflow/ETL/airflow",
+      image: Python // TODO: replace with a screenshot, e.g. ./assets/pgssearch.jpg
+    },
+    {
       title: "Task Management App",
       description: "The Task Management Application is a Python-based command-line tool that allows users to manage their tasks. It provides basic functionality for adding, listing, and removing tasks, along with tracking their completion status. Tasks are stored in a JSON file (tasks.json), making it easy to load and save data between sessions. This simple tool aims to help users stay organized by managing tasks efficiently.",
       technologies: ["Python", "Pytest"],
@@ -50,7 +71,7 @@ const App = () => {
       degree: "Bachelor of Science in Information Technology",
       institution: "Presidential Graduate School (Affiliated with Westcliff University)",
       period: "2022-2026",
-      description: "Specialized in Artificial Intelligence and Machine Learning. GPA: 3.96/4.0"
+      description: "Specialized in Artificial Intelligence and Machine Learning. GPA: 3.98/4.0"
     },
     {
       degree: "High School (+2)",
@@ -68,10 +89,28 @@ const App = () => {
 
   const experiences = [
     {
+      role: "Research and Development Associate, and Robotics Instructor",
+      company: "Robotics Association of Nepal (RAN)",
+      period: "April 2026 - August 2026",
+      points: [
+        "Conduct research, design, development, and testing of robotics, embedded systems, and automation projects utilizing sensors, microcontrollers, and AI-based technologies.",
+        "Successfully organized the AI for Good: Robotics for Good Youth Challenge in both the Junior and Senior Categories, coordinating event planning, participant management, technical evaluations, and competition execution.",
+        "Delivering robotics workshops and practical training sessions through the Ujjwal Education Department at RAN, teaching students, and enhancing their understanding of electronics, programming, and robotics concepts.",
+        "Mentoring students in robotics project development, guiding them in problem-solving, programming, circuit design, and prototype implementation.",
+        "Performed drone piloting for robotics demonstrations, training sessions, and outreach activities, introducing students to drone operation and aerial robotics concepts.",
+        "Collaborating with educators, industry experts, and team members to promote STEM, Robotics, and Artificial Intelligence education through workshops, competitions, and outreach programs."
+      ]
+    },
+    {
       role: "Research and Development Intern",
-      company: "Robotics Association of Nepal",
-      period: "2025 - Present",
-      description: "Focuses on designing and improving robotic technologies and solutions for local and practical applications."
+      company: "Robotics Association of Nepal (RAN)",
+      period: "October 2025 - April 2026",
+      points: [
+        "Assisted in the design, development, and testing of robotics and embedded system projects, focusing on sensors, microcontrollers, and automation concepts.",
+        "Supported research activities by experimenting with algorithms, documenting results, and contributing to prototype development.",
+        "Collaborated with team members on hands-on technical projects, gaining practical experience in robotics hardware integration and problem-solving.",
+        "Contributed to the organization of inter-school robotics competitions at RAN, taking on roles in event management while also designing and building functional robots for competitions and demonstrations."
+      ]
     },
   ];
 
@@ -163,7 +202,7 @@ const App = () => {
                 I am always eager to learn, experiment, and collaborate on projects that push the boundaries of technology. My goal is to leverage my skills to contribute to the tech community and create solutions that have a meaningful impact.
               </p>
               <div className="flex flex-wrap gap-2">
-                {['Python', 'Microcontrollers', 'React', 'Networking', 'SQL', 'HTML', 'CSS', 'GitHub', 'Packet Tracer', 'DBMS'].map((tech) => (
+                {['Python', 'Microcontrollers', 'Docker', 'Apache Airflow', 'Drone Piloting', 'React', 'Networking', 'SQL', 'HTML', 'CSS', 'GitHub', 'Packet Tracer', 'DBMS'].map((tech) => (
                   <span 
                     key={tech} 
                     className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
@@ -238,10 +277,14 @@ const App = () => {
                 <div className="ml-8 pb-8">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
                     <h3 className="text-xl font-semibold text-gray-900">{exp.role}</h3>
-                    <span className="text-blue-600 font-medium">{exp.period}</span>
+                    <span className="text-blue-600 font-medium sm:ml-4 whitespace-nowrap">{exp.period}</span>
                   </div>
                   <h4 className="text-lg text-gray-700 mb-3">{exp.company}</h4>
-                  <p className="text-gray-600">{exp.description}</p>
+                  <ul className="list-disc pl-5 space-y-2 text-gray-600">
+                    {exp.points.map((point, i) => (
+                      <li key={i}>{point}</li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             ))}
@@ -279,13 +322,17 @@ const App = () => {
                       </span>
                     ))}
                   </div>
-                  <a 
-                    href={project.link} 
-                    className="flex items-center text-blue-600 hover:text-blue-800 font-medium"
-                  >
-                    View Project
-                    <ExternalLink size={16} className="ml-1" />
-                  </a>
+                  {project.link && (
+                    <a 
+                      href={project.link} 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center text-blue-600 hover:text-blue-800 font-medium"
+                    >
+                      View Project
+                      <ExternalLink size={16} className="ml-1" />
+                    </a>
+                  )}
                 </div>
               </div>
             ))}
